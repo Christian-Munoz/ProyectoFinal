@@ -1,0 +1,146 @@
+<!-- <div class="container border-3 bg-info d-flex align-items-center justify-content-center">
+
+
+
+  <form class="row g-2 col-sm-8 mb-5 needs-validation" novalidate>
+    <div class="col-md-11 position-relative">
+      <label for="validationTooltip03" class="form-label">City</label>
+      <input type="text" class="form-control" id="validationTooltip03" required>
+      <div class="invalid-tooltip">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-2 position-relative">
+      <label for="validationTooltip01" class="form-label">First name</label>
+      <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-2 position-relative">
+      <label for="validationTooltip02" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-2 position-relative">
+      <label for="validationTooltipUsername" class="form-label">Username</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+        <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+        <div class="invalid-tooltip">
+          Please choose a unique and valid username.
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-3 position-relative">
+      <label for="validationTooltip04" class="form-label">State</label>
+      <select class="form-select" id="validationTooltip04" required>
+        <option selected disabled value="">Choose...</option>
+        <option>...</option>
+      </select>
+      <div class="invalid-tooltip">
+        Please select a valid state.
+      </div>
+    </div>
+    <div class="col-md-3 position-relative">
+      <label for="validationTooltip05" class="form-label">Zip</label>
+      <input type="text" class="form-control" id="validationTooltip05" required>
+      <div class="invalid-tooltip">
+        Please provide a valid zip.
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+  </form>
+</div>
+ -->
+
+<div class="container pt-5 border-1" style="width: 415px">
+  <div class="cards">
+    <ul class="nav nav-pills mb-3">
+      <li>
+        <a href="#nav-tab-card" class="nav-link active" data-toggle="pill"><i class="fa fa-credit-card"></i>Credit
+          Card</a>
+      </li>
+      <li>
+        <a href="#nav-tab-paypal" class="nav-link " data-toggle="pill"><i class="fa fa-paypal"></i>PayPaL</a>
+      </li>
+      <li>
+        <a href="#nav-tab-bank" class="nav-link" data-toggle="pill"><i class="fa fa-university"></i>Bank Transfer</a>
+      </li>
+    </ul>
+    <div class="tab-content p-3">
+      <div class="tab-pane fade show active" id="nav-tab-card">
+        <form role="" form>
+          <div class="form-group">
+            <label for="">Full name (on tech card)</label>
+            <input type="text" class="form-control" name="" />
+          </div>
+          <div class="form-group">
+            <label for="">Card Number</label>
+            <div class="input-group w75">
+              <input type="Number" class="form-control" placeholder="XXXX-XXXX-XXX-XXXX" />
+              <div class="text-primary input-group mt-2">
+                <i class="fab fa-cc-visa fa-2x"></i>
+                <i class="fab fa-cc-amex fa-2x mx-3"></i>
+                <i class="fab fa-cc-mastercard fa-2x"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="">Expiration</label>
+            <div class="input-group">
+              <input type="Number" class="form-control" placeholder="MM" name="">
+              <input type="Number" class="form-control" placeholder="YY" name="">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>CW<i class="fa fa-question-circle"></i></label>
+            <input type="Number" class="form-control" name="" />
+          </div>
+
+          <div class="form-group text-center pt-3">
+            <button class="btn btn-primary" type="button">Confirm</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="tab-pane fade text-center" id="nav-tab-paypal">
+        <p class="text-left">con Paypal es facil pagar</p>
+        <button type="button" class="btn btn-primary">
+          <i class="fas fa-sign-in-alt"></i>Login My Paypal</button>
+        <p class="mt-3">or</p>
+        <button type="button" class="btn btn-primary">
+          <i class="fas fa-user"></i>Create New Account
+        </button>
+        <p class="mt-4 text-left">
+          <strong>Note:</strong>Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Nihil, optio.
+        </p>
+      </div>
+
+      <div class="tab-pane fade" id="nav-tab-bank">
+        <p>Bank account details</p>
+        <dl>
+          <dt>BANK:</dt>
+          <dd>THE WORLD BANK</dd>
+          <dt>ACCOUNT Number:</dt>
+          <dd>132422526262626266</dd>
+          <dt>BANK:</dt>
+          <dd>THE WORLD BANK</dd>
+        </dl>
+
+        <p>
+          <strong>Note:</strong>Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Nihil, optio.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

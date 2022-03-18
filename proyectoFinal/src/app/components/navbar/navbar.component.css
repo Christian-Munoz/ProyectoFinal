@@ -1,0 +1,10 @@
+#navbarDropdown:hover {
+    border-bottom: 2.3px solid blue;
+
+}
+
+.dropdown-item:hover {
+    background-color: blue;
+    color: aliceblue;
+    font-size: 1.5rem;
+}

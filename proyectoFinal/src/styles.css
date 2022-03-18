@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+/* Estilos */
+
+.bg-blue {
+    background: #2f2977 !important;
+  }
+  
+  .text-blue {
+    color: #2f2977 !important;
+  }
+  
+  .bg-red-dark {
+    background: #f80000 !important;
+  }
+  
+  .text-red-dark {
+    color: #ff0101 !important;
+  }
+  
+  
+  /* Imágenes */
+  
+  .bg-image-login {
+    background: url('assets/img/login.jpg');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+  }
+  
+  .bg-image-register {
+    background: url('assets/img/registro.jpg');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+  }
