@@ -24,45 +24,44 @@ import { JavaScriptComponent } from './components/java-script/java-script.compon
 import { ExpressComponent } from './components/express/express.component';
 import { NodeJsComponent } from './components/node-js/node-js.component';
 import { PagosComponent } from './components/pagos/pagos.component';
+import { UserGuard } from './user.guard';
 
 
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'register', component: RegisterComponent},
-  { path: '', redirectTo:'/home', pathMatch: 'full'},
   //{ path: 'auth', loadChildren: './auth/auth.module#AuthModule'},
   //{ path: '', redirectTo: '/home', pathMatch: 'full'},
 
 
 
-  { path: 'home', component: HomeComponent},
-  { path: 'navbar', component: NavbarComponent},
-  { path: 'footer', component: FooterComponent},
-  { path: 'contacto', component: ContactoComponent},
-  { path: 'html', component: HtmlComponent},
-  { path: 'css', component: CssComponent},
-  { path: 'front-junior', component: FrontJuniorComponent},
-  { path: 'front-senior', component: FrontSeniorComponent},
-  { path: 'front-advance', component: FrontAdvanceComponent},
-  { path: 'full-stack' , component: FullStackComponent},
-  { path: 'full-stack-vue', component: FullStackVueComponent},
-  { path: 'full-stack-angular', component: FullStackAngularComponent},
-  { path: 'full-stack-reactive', component: FullStackReactiveComponent},
-  { path: 'desarrollo-back-end', component: DesarrolloBackEndComponent},
-  { path: 'app-reactnative', component: AppReactnativeComponent},
-  { path: 'Desarrollo-BackEnd', component: DesarrolloBackEndComponent},
-  { path: 'app-reackNative' , component: AppReactnativeComponent},
-  { path: 'angular', component: AngularComponent},
-  { path: 'bootstrap', component: BootstrapComponent},
-  { path: 'express', component: ExpressComponent},
-  { path: 'java-script', component: JavaScriptComponent},
-  { path: 'mongo-db', component: MongoDbComponent},
-  { path: 'node-js', component: NodeJsComponent},
-  { path: 'pagos', component: PagosComponent}
+  { path: 'home', component: HomeComponent, canActivate: [UserGuard]},
+  { path: 'contacto', component: ContactoComponent, canActivate: [UserGuard]},
+  { path: 'html', component: HtmlComponent, canActivate: [UserGuard]},
+  { path: 'css', component: CssComponent, canActivate: [UserGuard]},
+  { path: 'front-junior', component: FrontJuniorComponent, canActivate: [UserGuard]},
+  { path: 'front-senior', component: FrontSeniorComponent, canActivate: [UserGuard]},
+  { path: 'front-advance', component: FrontAdvanceComponent, canActivate: [UserGuard]},
+  { path: 'full-stack' , component: FullStackComponent, canActivate: [UserGuard]},
+  { path: 'full-stack-vue', component: FullStackVueComponent, canActivate: [UserGuard]},
+  { path: 'full-stack-angular', component: FullStackAngularComponent, canActivate: [UserGuard]},
+  { path: 'full-stack-reactive', component: FullStackReactiveComponent, canActivate: [UserGuard]},
+  { path: 'desarrollo-back-end', component: DesarrolloBackEndComponent, canActivate: [UserGuard]},
+  { path: 'app-reactnative', component: AppReactnativeComponent, canActivate: [UserGuard]},
+  { path: 'Desarrollo-BackEnd', component: DesarrolloBackEndComponent, canActivate: [UserGuard]},
+  { path: 'app-reackNative' , component: AppReactnativeComponent, canActivate: [UserGuard]},
+  { path: 'angular', component: AngularComponent, canActivate: [UserGuard]},
+  { path: 'bootstrap', component: BootstrapComponent, canActivate: [UserGuard]},
+  { path: 'express', component: ExpressComponent, canActivate: [UserGuard]},
+  { path: 'java-script', component: JavaScriptComponent, canActivate: [UserGuard]},
+  { path: 'mongo-db', component: MongoDbComponent, canActivate: [UserGuard]},
+  { path: 'node-js', component: NodeJsComponent, canActivate: [UserGuard]},
+  { path: 'pagos', component: PagosComponent, canActivate: [UserGuard]},
 
 
-  // { path: '**', component: Page404Component}
+  { path: '', redirectTo:'/home', pathMatch: 'full'},
+  { path: '**', redirectTo: '/home'}
 ];
 
 @NgModule({

@@ -84,11 +84,24 @@
         </div>
         
   
-        <div class="navbar-nav ms-auto gap-2">
+        <div class="navbar-nav ms-auto gap-2" *ngIf="!userService.loggedIn() ;else userLogged">
             
           <a class="btn btn-primary me-2 " href="/login">Iniciar Sesion</a>
           <a class="btn btn-primary me-2" href="/register">Registrarse</a>
         </div>
+
+        <ng-template #userLogged> 
+          <div class="navbar-nav ms-auto">
+              <a class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  {{ userService.getDataFromToken().username }}
+              </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><button class="dropdown-item" type="button">Opciones</button></li>
+                  <hr>
+                  <li><button class="dropdown-item" type="button" (click)="userService.logOut()">Cerrar Sesion</button></li>
+                </ul>
+            </div>
+        </ng-template>
   
       </div>
     </div>

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import  { NgForm } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,6 +29,7 @@ import { ExpressComponent } from './components/express/express.component';
 import { NodeJsComponent } from './components/node-js/node-js.component';
 import { AngularComponent } from './components/angular/angular.component';
 import { PagosComponent } from './components/pagos/pagos.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,9 @@ import { PagosComponent } from './components/pagos/pagos.component';
     BrowserModule,
     FontAwesomeModule,
     AppRoutingModule,
-    CarouselModule
+    CarouselModule,
+    FormsModule,
+    HttpClientModule
     
   ],
   providers: [],
